@@ -1,8 +1,13 @@
-<h1>My Bargains</h1>
 
-<p>Find the best bargains here</p>
 
-<h2>Today we are the <%= Time.now %></h2>
+    <div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 100%), url('background.png') no-repeat center center" >
+
+
+
+      <div class="banner-content">
+        <h1>The Greek Mans Treasures</h1>
+
+
 
 
 <p>What Product are you looking for?</p>
@@ -12,16 +17,70 @@
   <input type="submit">
 </form>
 
-
-
-
-
-
 <ul>
   <% @categories.each do |category| %>
   <li><%= category %></li>
 <% end %>
-
-
 </ul>
+
+      </div>
+    </div>
+
+    <div class="container text-center padded features">
+    <h1>Who is the Greek man?</h1>
+      <div class="row">
+        <div class="col-xs-9 col-sm-4 col-md-4">
+          <img src="search.png" alt="">
+          <h2>He scours through markets.....</h2>
+        </div>
+        <div class="col-xs-9 col-sm-4 col-md-4">
+          <img src="product.png" alt="">
+          <h2>To find you the perfect products..</h2>
+        </div>
+        <div class="col-xs-9 col-sm-4 col-md-4">
+          <img src="pay.png" alt="">
+          <h2>That you can then purchase!!</h2>
+        </div>
+
+      </div>
+    </div>
+    <div class="wrapper-grey-featured padded">
+      <div class="container">
+        <h2 class="text-center">Featured Items</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('card-paris.jpeg');">
+              <div class="card-category">Croydon</div>
+              <div class="card-description">
+                <h2>Paul</h2>
+                <p>Special Designs</p>
+              </div>
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('card-brussels.jpeg');">
+              <div class="card-category">Leicester Square</div>
+              <div class="card-description">
+                <h2>Marco</h2>
+                <p>10 years experience</p>
+              </div>
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('card-london.jpeg');">
+              <div class="card-category">Camden</div>
+              <div class="card-description">
+                <h2>Luke</h2>
+                <p>Has tattooed David Beckham</p>
+              </div>
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
