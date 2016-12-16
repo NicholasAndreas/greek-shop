@@ -1,0 +1,10 @@
+<h1>Here are all the awesome products</h1>
+
+
+<ul>
+  <% @products.each do |product| %>
+  <li><%= product[:name]%> (<%= product[:description]%>)
+    </li>
+  <% end %>
+
+</ul>

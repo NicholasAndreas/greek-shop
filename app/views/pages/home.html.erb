@@ -1,0 +1,27 @@
+<h1>My Bargains</h1>
+
+<p>Find the best bargains here</p>
+
+<h2>Today we are the <%= Time.now %></h2>
+
+
+<p>What Product are you looking for?</p>
+
+<form action="/products" method="get">
+  <input type="text" name="item_type" placeholder="What kind of product?">
+  <input type="submit">
+</form>
+
+
+
+
+
+
+<ul>
+  <% @categories.each do |category| %>
+  <li><%= category %></li>
+<% end %>
+
+
+</ul>
+
